@@ -4,7 +4,7 @@ Change both names to differentiate the variables completely as if they were in t
 Use the values and the indications in parentheses as guidance
 
 ----
- 
+
 address_ip= 123.123.123.123
 address_home = Avenida de Galicia
 
