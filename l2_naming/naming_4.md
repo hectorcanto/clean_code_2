@@ -9,24 +9,24 @@ if you don't understand some word, look for it in Google
 
 Table Vehicle
 
-  manufacturer VARCHAR
-  brand VARCHAR
-  model VARCHAR
+* manufacturer VARCHAR
+* brand VARCHAR
+* model VARCHAR
   
-  vin VARCHAR
-  updated_at DATETIME
-  purchased_at DATETIME
+* vin VARCHAR
+* updated_at DATETIME
+* purchased_at DATETIME
 
-  max_speed_kmh INTEGER
-  power_hp INTEGER
-  emissions_co2_gkm INTEGER
+* max_speed_kmh INTEGER
+* power_hp INTEGER
+* emissions_co2_gkm INTEGER
   
   photo_filepath VARCHAR
 
 Table Owner
 
-  fiscal_id_number VARCHAR
-  fiscal_id_type VARCHAR
-  birthday DATETIME
-  first_name VARCHAR
-  last_name VARCHAR
+* fiscal_id_number VARCHAR
+* fiscal_id_type VARCHAR
+* birthday DATETIME
+* first_name VARCHAR
+* last_name VARCHAR

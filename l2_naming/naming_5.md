@@ -8,6 +8,7 @@ Add extra fields if you need to, to fully identify the event, one extra depth is
 
 ----
 
+```json
 {
     date: "2023-03-22 19:06"
     description: "Vehicle stolen"
@@ -36,3 +37,5 @@ Add extra fields if you need to, to fully identify the event, one extra depth is
               last_name: "Doe"
         }
     }
+}
+```
