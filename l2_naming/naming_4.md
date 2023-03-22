@@ -9,21 +9,24 @@ if you don't understand some word, look for it in Google
 
 Table Vehicle
 
-  brand
-  model
-  vin
-  updated
+  manufacturer VARCHAR
+  brand VARCHAR
+  model VARCHAR
+  
+  vin VARCHAR
+  updated_at DATETIME
+  purchased_at DATETIME
 
-  manufacture
-  max_speed
-  power
-  emissions
-  photo
+  max_speed_kmh INTEGER
+  power_hp INTEGER
+  emissions_co2_gkm INTEGER
+  
+  photo_filepath VARCHAR
 
 Table Owner
 
-  identifier
-  age
-  first
-  last
-  purcharse
+  fiscal_id_number VARCHAR
+  fiscal_id_type VARCHAR
+  birthday DATETIME
+  first_name VARCHAR
+  last_name VARCHAR
