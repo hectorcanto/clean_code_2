@@ -9,6 +9,7 @@ if you don't understand some word, look for it in Google
 
 Table Vehicle
 
+
   brand (varchar)
   model (varchar)
   vin (varchar)
