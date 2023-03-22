@@ -9,21 +9,21 @@ if you don't understand some word, look for it in Google
 
 Table Vehicle
 
-  brand
-  model
-  vin
-  updated
+  brand: string
+  model: string
+  identificationNumber: int
+  updated: bool
 
-  manufacture
-  max_speed
-  power
-  emissions
-  photo
+  manufactor: string
+  max_speed: float
+  horsepower: int
+  emissions: float
+  photo: bitearray
 
 Table Owner
 
-  identifier
-  age
-  first
-  last
-  purcharse
+  id: int
+  age: int
+  firstname: string
+  lastname: string
+  vehicle: string
