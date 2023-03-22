@@ -5,26 +5,26 @@ Use the values and the indications in parentheses as guidance
 
 ----
  
-* address = 123.123.123.123
+* ipaddress = 123.123.123.123
 * address = Avenida de Galicia
 
-* temp = /tmp/dir1
+* tempdir = /tmp/dir1
 * temp = 27
 
-* x = 12.3º N
-* x = 12.3 kph
+* coordinate = 12.3º N
+* speed = 12.3 kph
 
 * actived = true
-* actived = 12/03/1997
+* dateactived = 12/03/1997
 
-* size = 20 (lines in a page)
+* cantline = 20 (lines in a page)
 * size = big (clothing)
 
-* user = "Carlos Rodriguez" (pays)
+* client = "Carlos Rodriguez" (pays)
 * user = "Juana Dominguez" (coworker)
 
 * type = "animal"
-* types = ["animal", "object", "place"]
+* typecollection = ["animal", "object", "place"]
 
-* log = java.util.logging.Logger
+* logclass = java.util.logging.Logger
 * log = "166823851 ERROR process 1234 failed"
