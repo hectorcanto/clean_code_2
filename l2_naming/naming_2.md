@@ -12,10 +12,10 @@ temp_path = /tmp/dir1
 temperature_c = 27
 
 latitude = 12.3º N
-speed = 12.3 kph
+speed_pkh = 12.3 kph
 
 is_active = true
-actived_at = 12/03/1997
+activated_at = 12/03/1997
 
 lines_per_page = 20 (lines in a page)
 clothing_size = big (clothing)
@@ -23,8 +23,8 @@ clothing_size = big (clothing)
 customer = "Carlos Rodriguez" (pays)
 employee = "Juana Dominguez" (coworker)
 
-entity_type = "animal"
-entity_types = ["animal", "object", "place"]
+current_type = "animal"
+available_types = ["animal", "object", "place"]
 
 logger = java.util.logging.Logger
 log_msg = "166823851 ERROR process 1234 failed"
