@@ -5,26 +5,26 @@ Use the values and the indications in parentheses as guidance
 
 ----
  
-address = 123.123.123.123
-address = Avenida de Galicia
+address_ip= 123.123.123.123
+address_home = Avenida de Galicia
 
-temp = /tmp/dir1
-temp = 27
+temp_directory = /tmp/dir1
+temp_constant = 27
 
-x = 12.3º N
-x = 12.3 kph
+x_coordinate= 12.3º N
+x_speed= 12.3 kph
 
-actived = true
-actived = 12/03/1997
+actived_status= true
+actived_from = 12/03/1997
 
-size = 20 (lines in a page)
-size = big (clothing)
+size_of_page = 20 (lines in a page)
+size_clothes = big (clothing)
 
-user = "Carlos Rodriguez" (pays)
-user = "Juana Dominguez" (coworker)
+user_payer= "Carlos Rodriguez" (pays)
+user_coworker= "Juana Dominguez" (coworker)
 
-type = "animal"
-types = ["animal", "object", "place"]
+type_thing = "animal"
+array_types = ["animal", "object", "place"]
 
-log = java.util.logging.Logger
-log = "166823851 ERROR process 1234 failed"
+log_logger = java.util.logging.Logger
+log_error = "166823851 ERROR process 1234 failed"
