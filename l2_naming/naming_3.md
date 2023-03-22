@@ -6,14 +6,14 @@ Change the fields for something more readable and coherent
 
 models.User
 
-* username: str
+* complete_name: str
 * first_name: str
-* lastname: str
+* last_name: str
 * email: str
-* passwd: bytes
-* groups: M2M
-* usr_perms: M2M
-* staff: bool
+* pwd: bytes
+* group_ids: M2M
+* perm_ids: M2M
+* is_staff: bool
 * is_act: bool
-* is_sup: bool
-* date_joined: datetime
+* is_superuser: bool
+* joined_at: datetime
