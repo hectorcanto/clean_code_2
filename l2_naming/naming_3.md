@@ -4,17 +4,17 @@ Exercicio 2 Variables
 
 models.User
 
-username: str
+login_name: str
 first_name: str
-lastname: str
+last_name: str
 email: str
-passwd: bytes
+password: bytes
 groups: M2M
-usr_perms: M2M
-staff: bool
-is_act: bool
-is_sup: bool
-date_joined: datetime
+permissions: M2M
+is_staff: bool
+is_active: bool
+is_supplier: bool
+joined_at: datetime
 
 
 
@@ -28,5 +28,4 @@ date_joined: datetime
     brand: Ford
     model: Focus
     id: 33123123N
-
 }
