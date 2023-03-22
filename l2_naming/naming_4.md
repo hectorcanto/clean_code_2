@@ -18,7 +18,7 @@ Table Vehicle
 *   max_speed => maxSpeedKmh
 *   power => horsePower
 *   emissions => EmissionsCO2
-*   photo => photoUrl
+*   photo => photoNameList
 
 Table Owner
 
