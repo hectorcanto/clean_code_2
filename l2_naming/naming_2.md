@@ -3,28 +3,27 @@
 Change both names to differentiate the variables completely as if they were in the same context
 Use the values and the indications in parentheses as guidance
 
-----
- 
-* address = 123.123.123.123
-* address = Avenida de Galicia
 
-* temp = /tmp/dir1
-* temp = 27
+ipAddress = 123.123.123.123
+cityAddress = Avenida de Galicia
 
-* x = 12.3º N
-* x = 12.3 kph
+tempDir = /tmp/dir1
+tempValue = 27
 
-* actived = true
-* actived = 12/03/1997
+grades = 12.3º N
+speed = 12.3 kph
 
-* size = 20 (lines in a page)
-* size = big (clothing)
+activedUser = true
+activedAt = 12/03/1997
 
-* user = "Carlos Rodriguez" (pays)
-* user = "Juana Dominguez" (coworker)
+pageLines = 20 (lines in a page)
+sizeCloth = big (clothing)
 
-* type = "animal"
-* types = ["animal", "object", "place"]
+userBuyer = "Carlos Rodriguez" (pays)
+userCoworker = "Juana Dominguez" (coworker)
 
-* log = java.util.logging.Logger
-* log = "166823851 ERROR process 1234 failed"
+typeObject = "animal"
+typesObject = ["animal", "object", "place"]
+
+logObject = java.util.logging.Logger
+messageLog = "166823851 ERROR process 1234 failed"
