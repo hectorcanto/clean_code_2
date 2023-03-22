@@ -2,8 +2,6 @@
 
 Write the full name or what you think it is
 
-----
-
 msg = "message"
 exc = "execute"
 srv = "server"
@@ -41,4 +39,3 @@ sdk = "software development kit"
 lib = "library"
 uid = "unique identificator"
 cat = "category"
-
