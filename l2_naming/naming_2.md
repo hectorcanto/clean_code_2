@@ -17,8 +17,8 @@ Use the values and the indications in parentheses as guidance
 * actived_status = true
 * actived_date = 12/03/1997
 
-* size_page = 20 (lines in a page)
-* size_cloth = big (clothing)
+* size_pages = 20 (lines in a page)
+* size_clothes = big (clothing)
 
 * billing_user = "Carlos Rodriguez" (pays)
 * cowork_user = "Juana Dominguez" (coworker)
