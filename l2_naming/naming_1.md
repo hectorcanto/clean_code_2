@@ -21,7 +21,7 @@ Write the full name or what you think it is
 * dto = "data transfer object" # "descuento"?
 * dao = "data access object"
 * repo = "repository" # "repost"?
-* ver = "variable" # "variable"?
+* ver = "version"
 * db = "database" # "doubloons"?
 * sla = "service level agreement" # "slang"?
 * rfc = "request for comments" # "random furious complaints"?
