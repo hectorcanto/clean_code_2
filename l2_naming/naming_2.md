@@ -12,7 +12,7 @@ Use the values and the indications in parentheses as guidance
 * temperature_c = 27
 
 * latitude = 12.3º N
-* speed_pkh = 12.3 kph
+* speed_kph = 12.3 kph
 
 * is_active = true
 * activated_at = 12/03/1997
