@@ -8,8 +8,10 @@ Add extra fields if you need to, to fully identify the event, one extra depth is
 
 ----
 
+```json
 {
     brand: Ford
     model: Focus
     id: 33123123N
 }
+```
