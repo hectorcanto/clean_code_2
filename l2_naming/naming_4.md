@@ -17,7 +17,7 @@ Table Vehicle
 *   updated_at DATETIME
 *   purchased_at DATETIME
 
-*   max_speed_kmh INTEGER
+*   max_speed_kph INTEGER
 *   power_hp INTEGER
 *   emissions_co2_gkm INTEGER
   
