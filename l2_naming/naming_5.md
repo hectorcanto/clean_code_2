@@ -23,7 +23,7 @@ Add extra fields if you need to, to fully identify the event, one extra depth is
         updated_at: "2020-01-01 00:00"
         purchased_at: "2023-01-01 00:00"
 
-        max_speed_kmh: 258
+        max_speed_kph: 258
         power_hp: 105
         emissions_co2_gkm: 139
   
