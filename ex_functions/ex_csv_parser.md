@@ -4,11 +4,13 @@ Source: https://ccd-school.de/en/coding-dojo/function-katas/csv-table-izer/
 
 Convert [this CSV](source.csv)  into an "ASCII" Table like this one
 
-Name         |Street          |City         |Age|<br>
--------------+----------------+-------------+---+<br>
-Peter Pan    |Am Hang 5       |12345 Einsam |42 |<br>
-Maria Schmitz|Kölner Straße 45|50123 Köln   |43 |<br>
-Paul Meier   |Münchener Weg 1 |87654 München|65 |<br>
+```
+Name         |Street          |City         |Age|
+-------------+----------------+-------------+---+
+Peter Pan    |Am Hang 5       |12345 Einsam |42 |
+Maria Schmitz|Kölner Straße 45|50123 Köln   |43 |
+Paul Meier   |Münchener Weg 1 |87654 München|65 |
+```
 
 ## Instructions
 
