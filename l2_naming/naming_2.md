@@ -1,7 +1,10 @@
 ## Ex.2
 
-Change both names to differentiate the variables completely as if they were in the same context
+Change both names to differentiate the variables completely as if they were in the same context.
+
 Use the values and the indications in parentheses as guidance
+
+You don't to keep the word as it is if you find a better one.
 
 ----
  
