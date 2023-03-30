@@ -8,26 +8,26 @@ You don't to keep the word as it is if you find a better one.
 
 ----
  
-* address = 123.123.123.123
-* address = Avenida de Galicia
+ipAddress = 123.123.123.123
+street = Avenida de Galicia
 
-* temp = /tmp/dir1
-* temp = 27
+route = /tmp/dir1
+degrees = 27
 
-* x = 12.3º N
-* x = 12.3 kph
+latitude = 12.3º N
+speed = 12.3 kph
 
-* actived = true
-* actived = 12/03/1997
+isActive = true
+activedDate = 12/03/1997
 
-* size = 20 (lines in a page)
-* size = big (clothing)
+pageLines = 20 (lines in a page)
+clothingSize = big (clothing)
 
-* user = "Carlos Rodriguez" (pays)
-* user = "Juana Dominguez" (coworker)
+customer = "Carlos Rodriguez" (pays)
+developer = "Juana Dominguez" (coworker)
 
-* type = "animal"
-* types = ["animal", "object", "place"]
+type = "animal"
+typeArray = ["animal", "object", "place"]
 
-* log = java.util.logging.Logger
-* log = "166823851 ERROR process 1234 failed"
+logClass = java.util.logging.Logger
+logMsg = "166823851 ERROR process 1234 failed"
