@@ -8,35 +8,35 @@ Some might ok with 2 options, choose one and justify it.
 
 ----
 
-* I cannot access that web if I'm not logged:
-  *  
+* I cannot access that web if I'm not logged: 
+  *  401
 
-* I'm logged but I cannot access that page
-  * 
+* I'm logged but I cannot access that page 
+  * 403
 
-* The item with that Id was deleted
-  * 
+* The item with that Id was deleted 
+  * 404
 
-* I started uploading, but I have to check another link to see if it is there
-  * 
+* I started uploading, but I have to check another link to see if it is there 
+  * 307
 
-* That query parameter is wrong
-  * 
+* That query parameter is wrong 
+  * 400
 
-* There are no resources with that ID
-  * 
+* There are no resources with that ID 
+  * 204
 
-* My request was good, but it will take time to resolve
-  * 
+* My request was good, but it will take time to resolve 
+  * 408
 
-* The resource was deleted but no extra info was provided
-  * 
+* The resource was deleted but no extra info was provided 
+  * 410
 
-* Added a product to the collection
-  * 
+* Added a product to the collection 
+  * 201
 
-Got the info I needed
-  * 
+Got the info I needed 
+  * 200
 
 
 
@@ -45,23 +45,23 @@ Got the info I needed
 Select the HTTP verb that is closer to the provided description.
 Add any additional explanation if you doubt between 2 options.
 
-* Added some info to my profile
-  * 
+* Added some info to my profile 
+  * PUT
  
 * Checked my profile as it is now
-  * 
+  * GET
 
 * Created a new product
-  * 
+  * POST
 
 * Created several new products
-  *  
+  * POST
 
 * Removed one product
-  *  
+  * DELETE
 
 * Replaced one product by another
-  *  
+  * PATCH
 
 * Want to know if the image is there, without downloading it
-  * 
+  * HEAD
