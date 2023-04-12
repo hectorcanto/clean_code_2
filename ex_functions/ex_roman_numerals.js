@@ -1,17 +1,11 @@
-convertFromRomanNumerals = function (romanNumerals) {
-  var romanNumerals = {
-    I: 1,
-    V: 5,
-    X: 10,
-    L: 50,
-    C: 100,
-    D: 500,
-    M: 1000,
+convertFromRomanNumerals = function (value) {
+  const arabicNumerals = {
+    I: 1, V: 5, X: 10, L: 50, C: 100, D: 500, M: 1000,
   };
-  var total = 0;
-  var previous = 0;
-  for (var i = romanNumerals.length - 1; i >= 0; i--) {
-    var current = romanNumerals[romanNumerals[i]];
+  let total = 0;
+  let previous = 0;
+  for (let i = value.length - 1; i >= 0; i--) {
+    let current = arabicNumerals[value[i]];
     if (current < previous) {
       total -= current;
     } else {
@@ -21,6 +15,14 @@ convertFromRomanNumerals = function (romanNumerals) {
   }
   return total;
 };
+
+
+//console.log(convertFromRomanNumerals("XIV"));
+//console.log(convertFromRomanNumerals("XXIV"));
+//console.log(convertFromRomanNumerals("XXIV"));
+//console.log(convertFromRomanNumerals("MXCIV"));
+
+
 
 convertToRomanNumerals = function (value) {
   const lowerLimit = 1;
@@ -71,6 +73,5 @@ try {
 
 console.log(convertToRomanNumerals(2023));
 console.log(convertToRomanNumerals(2949));
-*/
 
-// console.log(convertFromRomanNumerals("XIV"));
+*/
