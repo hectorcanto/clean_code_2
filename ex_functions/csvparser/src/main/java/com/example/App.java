@@ -17,8 +17,12 @@ import java.util.List;
  */
 public class App {
 
-    private static final String csvFile = "source.csv";
-    private static final String separator = ";";
+    private static final String CSV_FILE = "source.csv";
+    private static final String CSV_SEPARATOR = ";";
+    private static final String BAR_TABLE = "|";
+    private static final String BLANK_SPACE = " ";
+    private static final String PLUS = "+";
+    private static final String HYPHEN = "-";
 
     /**
      * The main method of the application.
@@ -26,7 +30,7 @@ public class App {
      * @param args Command-line arguments (not used)
      */
     public static void main(String[] args) {
-        List<List<String>> records = readCSV(csvFile, separator);
+        List<List<String>> records = readCSV(CSV_FILE, CSV_SEPARATOR);
         printASCIITable(records);
     }
 
@@ -68,9 +72,9 @@ public class App {
             for (int i = 0; i < record.size(); i++) {
                 String field = record.get(i);
                 int padding = maxFieldLengths.get(i) - getVisualLength(field);
-                System.out.print("| " + field + " ".repeat(padding) + " ");
+                System.out.print(BAR_TABLE + BLANK_SPACE + field + " ".repeat(padding) + BLANK_SPACE);
             }
-            System.out.println("|");
+            System.out.println(BAR_TABLE);
             if (rowIndex == 0) {
                 System.out.println(separatorRow);
             }
@@ -128,12 +132,12 @@ public class App {
         StringBuilder separatorRow = new StringBuilder();
 
         for (int length : maxFieldLengths) {
-            separatorRow.append("+");
+            separatorRow.append(PLUS);
             for (int i = 0; i < length + 2; i++) {
-                separatorRow.append("-");
+                separatorRow.append(HYPHEN);
             }
         }
-        separatorRow.append("+");
+        separatorRow.append(PLUS);
 
         return separatorRow.toString();
     }
