@@ -9,21 +9,21 @@ if you don't understand some word, look for it in Google
 
 Table Vehicle
 
-*   brand
-*   model
-*   vin
-*   updated
+*   BRAND varchar(200)
+*   MODEL varchar(200)
+*   VIN varchar(200)
+*   UPDATED datetime
 
-*   manufacture
-*   max_speed
-*   power
-*   emissions
-*   photo
+*   MANUFACTURE varchar(200)
+*   MAX_SPEED INT
+*   HORSE_POWER INT
+*   EMISSION INT
+*   PHOTO
 
 Table Owner
 
-*   identifier
-*   age
-*   first
-*   last
-*   purcharse
+*   ID INT IDENTITY
+*   BIRTHDATE DATE
+*   NAME VARCHAR(150)
+*   LAST_NAME VARCHAR(150)
+*   ID_PURCHARSE INT
