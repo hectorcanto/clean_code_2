@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+  function getRomanNumber() {
+    const message = document.getElementById("message");
+    message.innerHTML = "";
+    let decimalNumber = parseInt(document.getElementById("decimalNumber").value);
+    try {
+      if(decimalNumber == "") throw "is Empty";
+      if(isNaN(decimalNumber)) throw "not a number";
+      if(decimalNumber > 3000) throw "too high";
+      if(decimalNumber < 0) throw "too low";
+      message.innerHTML = "Roman number is => " + romanize(decimalNumber);
+    } catch(err) {
+      message.innerHTML = "Number is " + err;
+    }
+  }
+
+  function romanize(decimalNumber) {
+    let lookup = {M:1000,CM:900,D:500,CD:400,C:100,XC:90,L:50,XL:40,X:10,IX:9,V:5,IV:4,I:1};
+    let roman = '';
+    let i;
+    for (i in lookup) {
+      while (decimalNumber >= lookup[i]) {
+        roman += i;
+        decimalNumber -= lookup[i];
+      }
+    }
+    return roman;
+  }
+  </script>
+</head>
+<body>
+  <h2>Roman Numerals</h2>
+  <p>Please input a number between 1 and 3000:</p>
+  <input id="decimalNumber" type="number" min="1" max="3000">
+  <button type="button" onclick="getRomanNumber()">Number</button>
+  <p id="message"></p>
+</body>
+</html>
+
+
