@@ -9,21 +9,21 @@ if you don't understand some word, look for it in Google
 
 Table Vehicle
 
-*   brand
-*   model
-*   vin
-*   updated
+*   brand (Char)
+*   model (Char)
+*   vin (Int)
+*   updated_at (Datetime)
 
 *   manufacture
-*   max_speed
-*   power
-*   emissions
-*   photo
+*   max_speed (Float)
+*   power 
+*   emission_rate (Float)
+*   image (Binary)
 
 Table Owner
 
-*   identifier
-*   age
-*   first
-*   last
-*   purcharse
+*   id (Int)
+*   age (Int)
+*   first_name (Char) 
+*   last_name (Char)
+*   is_purcharse (Bool)
