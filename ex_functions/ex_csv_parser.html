@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    var data = `Name;Street;City;Age
+    Peter Pan;Am Hang 5;12345 Einsam;42
+    Maria Schmitz;Kölner Straße 45;50123 Köln;43
+    Paul Meier;Münchener Weg 1;87654 München;65`.split("\n");
+
+    class CsvToAscii {
+
+      constructor(dataCsv) {
+        this.metaData = [];
+        this.cabecera = this.setCabecera(dataCsv);
+        this.body = this.setData(dataCsv);
+      }
+
+      setCabecera(data) {
+        let names = data[0].split(";");
+        names.forEach(el => {
+          if (el === "") return;
+        });
+        return names;
+      }
+
+      setData(data) {
+        let result = [];
+        data.forEach((el,i) => {
+        if (i === 0) return;
+          const d = el.split(";").join(" ").split(" ");
+          const obj = {};
+          let lenghtLongerItem = 0;
+          d.forEach((el,i) => {
+            if (el === "") return
+            obj[this.cabecera[i]] = el;
+            if(el.length > lenghtLongerItem) {
+              this.metaData[this.cabecera[i]] = el.length;
+            }
+          });
+          result.push(obj);
+        });
+        return result;
+      }
+
+      getItem(nameItem) {
+        const r = [];
+        this.body.forEach(el => {
+          r.push(el[nameItem]);
+        });
+        return r;
+      }
+
+      getSizeSeparatorItem(item) {
+        let itemMoreLong = item.reduce(
+            function (a, b) {
+                return a.length > b.length ? a : b;
+            }
+        );
+        return itemMoreLong.length;
+      }
+
+      formatTable() {
+        var head = '';
+        var headSeparator = '';
+        var columnsSeparator = '|';
+        var tableSeparator = '-';
+        this.cabecera.forEach(el => {
+          let spacesToAdd = this.getSpacesToAdd(el);
+          head += el + ' '.repeat(spacesToAdd) + columnsSeparator;
+          headSeparator += tableSeparator.repeat(this.metaData[el]) + columnsSeparator;
+        });
+        console.log(head);
+        console.log(headSeparator);
+      }
+
+      getSpacesToAdd(item) {
+        let moreLengt = this.metaData[item];
+        let spacesToAdd = 0;
+        if((moreLengt - item.length) >= 0) {
+          spacesToAdd = moreLengt - item.length;
+        }
+        return spacesToAdd;
+      }
+    }
+
+    let csv = new CsvToAscii(data);
+    csv.formatTable();
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
+
+
